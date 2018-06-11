@@ -1,0 +1,22 @@
+{% extends 'client/bases/edit_base.html'%}
+
+{% block title %} {{ project.title }} {% endblock %} 
+
+{% block scripts %}
+	{% load staticfiles %}
+	 <link rel="stylesheet" type="text/css" href="{% static 'css/forms.css' %}" /> 
+{% endblock %} 
+	
+{% block content %} 
+
+	<h4>{{ project.title }}</h4>
+    
+  {% if has_permission %}
+    <a href="{% url 'project:edit' project.slug %}"> Editar </a>
+  {% endif %}
+
+{% endblock %} 
+
+{% block footer %} 
+
+{% endblock %} 

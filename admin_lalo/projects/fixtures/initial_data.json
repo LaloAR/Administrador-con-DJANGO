@@ -1,0 +1,35 @@
+[
+	{
+		"model": "projects.projectpermission",
+		"pk": 1,
+		"fields":
+			{
+				"title": "Fundador",
+				"description": "Fundador",
+				"level": 1,
+				"create_date": "2018-02-24T01:21:49Z"
+			}
+	},
+	{
+		"model": "projects.projectpermission",
+		"pk": 2,
+		"fields": 
+			{
+				"title": "Co fundador",
+				"description": "Co fundador",
+				"level": 1,
+				"create_date": "2018-02-28T04:57:02Z"
+			}
+	}, 
+	{
+		"model": "projects.projectpermission",
+		"pk": 3, 
+		"fields":
+			{
+				"title": "Colaborador",
+				"description": "Colaborador",
+				"level": 2, 
+				"create_date": "2018-02-28T04:58:07Z"
+			}
+	}
+]

@@ -1,0 +1,16 @@
+{% extends 'client/bases/edit_base.html'%}
+
+{% block title %} Dashboard {% endblock %} 
+
+{% block scripts %} 
+	{# nada por el momento #}
+{% endblock %} 
+
+
+{% block content %} 
+	<h3>Bienvenido {{ user.username|title }}</h3>
+	<a href="{% url 'client:show' user.username %}">  {{user.username}} 
+	<a href="{% url 'project:my_projects'%}">  Mis proyectos </a>
+{% endblock %} 
+
+{% block footer %} {% endblock %} 
